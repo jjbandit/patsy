@@ -1,14 +1,5 @@
 Rails.application.routes.draw do
 
-	# Route for the bulk-generate form
-	Spree::Core::Engine.routes.draw do
-		get "admin/products/bulk-gen" => "admin#generate"
-	end 
-
-
-
-
-
   # This line mounts Spree's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to Spree::ProductsController.
   # If you would like to change where this engine is mounted, simply change the :at option to something different.
@@ -69,5 +60,10 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+	# Route for the bulk-generate form
+	Spree::Core::Engine.routes.draw do
+		get "admin/products/generate" => "admin/products#generate"
+	end 
 
 end
