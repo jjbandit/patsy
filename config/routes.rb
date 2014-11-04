@@ -63,7 +63,7 @@ Rails.application.routes.draw do
 
 	# Route for the bulk-generate form
 	Spree::Core::Engine.routes.draw do
-		get "admin/products/generate" => "admin/products#generate"
+		get "admin/products/batch" => "admin/products#batch"
 	end 
 
 end

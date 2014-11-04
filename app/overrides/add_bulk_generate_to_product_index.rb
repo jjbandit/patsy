@@ -3,7 +3,7 @@ Deface::Override.new(:virtual_path  => 'spree/admin/products/index',
 										 :insert_bottom => 'li#new_product_link',
 										 :text          => '
 <li id="generate_new_products_link">
-	<%= button_link_to Spree.t(:new_batch), new_object_url, { :remote => true, :icon => \'plus\', :id =>\'admin_generate_product\' } %>
+	<%= button_link_to Spree.t(:new_batch), \'products/batch\', { :remote => true, :icon => \'plus\', :id =>\'admin_new_batch\' } %>
 </li>
 
 ')
