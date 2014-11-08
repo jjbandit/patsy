@@ -1,0 +1,8 @@
+/* Clear box around main picture and replace with dashes */
+#product-images #main-image,
+#product-description .product-title,
+nav #main-nav-bar,
+footer#footer {
+	border: none;
+	border-bottom: 1px dashed grey;
+}
