@@ -1,0 +1,15 @@
+// This is a duplicate of the /backend/app/views/spree/admin/products/new.js.erb
+
+// Gets fired when the page gets ajax loaded
+// It renders the batch template in the content area for the products page and hides whatever was there before.
+
+$("#new_product_wrapper").html('<%= escape_javascript(render :template => "spree/admin/products/batch", :formats => [:html], :handlers => [:erb]) %>');
+handle_date_picker_fields();
+<% unless Rails.env.test? %>
+  $('.select2').select2();
+<% end %>
+$("#table-filter").hide();
+$("#admin_new_batch").parent().hide();
+
+// Ensure the new_product_link gets shown when we go to the batch page
+$("#new_product_link").show();
