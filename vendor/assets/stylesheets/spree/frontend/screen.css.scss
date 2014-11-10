@@ -1,0 +1,26 @@
+@import 'colorscheme';
+
+
+
+@media screen and (min-width: 768px) {
+	/***********************************************************   Positioning */
+
+	.container {
+		padding:0;
+		width: 100%;
+	}
+
+	header,
+	footer#footer {
+		margin: 0;
+	}
+
+	div#wrapper,
+	footer#footer{
+		padding-left: 10px;
+	}
+
+	footer#footer {
+		width: 100%;
+	}
+}
