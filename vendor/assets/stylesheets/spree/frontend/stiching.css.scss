@@ -1,0 +1,44 @@
+@import 'colorscheme';
+
+/* Clear Borders */
+
+#product-images #main-image,
+ul#products li .product-image,
+#product-description .product-title,
+nav #main-nav-bar,
+nav#taxonomies .taxonomy-root,
+footer#footer 
+{
+	border: none;
+}
+/* Emphasized Stiching */
+header#header {
+	border-bottom: 2px dashed;
+}
+footer#footer {
+	border-top: 2px dashed;
+}
+
+/* Light Stitching */
+ul#products li a.info,
+#product-images #main-image,
+#sidebar_products_search .filter-title,
+ul#products li .product-image,
+#product-description .product-title,
+nav#taxonomies .taxonomy-root,
+footer#footer 
+{
+	border-bottom: 1px dashed $color-complement-0;
+}
+
+/*******************************************************    List Styling */
+
+nav#taxonomies {
+  text-align: center;
+}
+
+nav#taxonomies .taxons-list li {
+	font-size: 16px;
+	list-style-type: none;
+}
+
