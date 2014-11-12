@@ -12,6 +12,7 @@ footer#footer
 	border: none;
 }
 /* Emphasized Stiching */
+#product-images #main-image,
 header#header {
 	border-bottom: 2px dashed;
 }
@@ -21,7 +22,6 @@ footer#footer {
 
 /* Light Stitching */
 ul#products li a.info,
-#product-images #main-image,
 #sidebar_products_search .filter-title,
 ul#products li .product-image,
 #product-description .product-title,
