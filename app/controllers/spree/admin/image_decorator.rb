@@ -1,5 +1,5 @@
-Spree::Image.class_eval do 
 
+Spree::Image.class_eval do 
 
 	attachment_definitions[:attachment][:styles] = lambda do |a| 
 		
@@ -14,4 +14,5 @@ Spree::Image.class_eval do
 		end
 
 	end
+
 end
