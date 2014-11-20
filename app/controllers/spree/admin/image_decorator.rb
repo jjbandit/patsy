@@ -1,4 +1,3 @@
-
 Spree::Image.class_eval do 
 
 	attachment_definitions[:attachment][:styles] = lambda do |a| 
