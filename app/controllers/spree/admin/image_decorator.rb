@@ -1,5 +1,5 @@
 Spree::Image.class_eval do 
 
-	{mini: '150x150#', small: '400x300#', landscape: '440x320#', portrait: '320x440#', large: '400x700#'}
+	{mini: '15x15#', small: '40x30#', landscape: '44x32#', portrait: '32x44#', large: '40x70#'}
 
 end
