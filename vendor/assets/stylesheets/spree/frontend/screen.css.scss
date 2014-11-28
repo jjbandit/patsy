@@ -699,6 +699,7 @@ ul#products {
 
 
 #checkout-summary {
+	background: $layout_background_trans;
   text-align: center;
   border: $default_border;
   margin-top: 23px;
@@ -734,6 +735,7 @@ ul#products {
 
 #billing, #shipping, #shipping_method,
 #payment, #order_details, #order_summary {
+	background: $layout_background_trans;
   margin-top: 10px;
   border: $default_border;
   padding: 10px;
@@ -829,6 +831,7 @@ ul#products {
 }
 
 #shipping_method {
+	background: transparent;
   p {
     &#minstrs {
       clear: both;
@@ -903,8 +906,9 @@ ul#products {
       }
     }
     tbody {
-      tr {
-        td {
+			background-color: $layout_background_trans_light;
+      	tr {
+       	 td {
           text-align: center;
 
           &.item-name {
@@ -941,6 +945,7 @@ table#cart-detail {
   border-collapse: separate;
 
   tbody#line_items {
+		background: $layout_background_trans_light;
     tr {
 
       td[data-hook="cart_item_price"], td[data-hook="cart_item_total"] {
