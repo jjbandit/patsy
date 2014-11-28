@@ -1,10 +1,13 @@
 source 'https://rubygems.org'
 
+# Use the required version of rake
+gem 'rake', '~>10.3.2'
+
 # Use pry for rails c
 gem 'pry-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.6'
+gem 'rails', '4.1.8'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -44,3 +47,5 @@ gem 'spring',        group: :development
 gem 'spree', github: 'spree/spree', branch: '2-4-stable'
 gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-4-stable'
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-4-stable'
+
+gem 'rails_12factor', group: :production
