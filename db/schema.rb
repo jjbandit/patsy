@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141115191796) do
+ActiveRecord::Schema.define(version: 20141128053037) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -758,6 +758,7 @@ ActiveRecord::Schema.define(version: 20141115191796) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "default",                default: false, null: false
     t.string   "address1"
     t.string   "address2"
     t.string   "city"
@@ -770,7 +771,6 @@ ActiveRecord::Schema.define(version: 20141115191796) do
     t.boolean  "backorderable_default",  default: false
     t.boolean  "propagate_all_variants", default: true
     t.string   "admin_name"
-    t.boolean  "default",                default: false, null: false
   end
 
   add_index "spree_stock_locations", ["active"], name: "index_spree_stock_locations_on_active", using: :btree
