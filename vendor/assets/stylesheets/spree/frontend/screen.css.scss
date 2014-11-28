@@ -17,7 +17,7 @@ body {
   color: $body_text_color;
   line-height: 18px;
   background-color: $layout_background_color;
-	background-image: url("/assets/spree/frontend/graham-bg.jpg");
+	background: url("/assets/spree/frontend/graham-bg.jpg") no-repeat fixed center;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -247,7 +247,8 @@ p {
 /*--------------------------------------*/
 table {
   thead {
-    background-color: $table_head_color;
+    background-color: $layout_background_color;
+    background-color: $layout_background_trans;
     text-transform: uppercase;
 
     tr {
@@ -267,7 +268,7 @@ table {
       }
 
       &.alt, &.odd {
-        background-color: lighten($link_text_color, 50);
+        background-color: rgba(0,0,0, 0.25);
       }
     }
   }
@@ -388,7 +389,7 @@ nav#taxonomies {
 /*--------------------------------------*/
 .flash {
   padding: 10px;
-  color: $layout_background_color;
+  color: white;
   font-weight: bold;
   margin-bottom: 10px;
 
@@ -505,7 +506,6 @@ ul#products {
       border: $default_border;
       padding: 5px;
       min-height: 110px;
-      background-color: $product_background_color;
 
       &:hover {
         border-color: $link_text_color;
@@ -565,7 +565,6 @@ ul#products {
   #main-image {
     text-align: center;
     border: $default_border;
-    background-color: $product_background_color;
 
     img {
       max-width: 100%; /* Fluid images for product */
@@ -573,7 +572,7 @@ ul#products {
   }
   #product-thumbnails {
     li {
-      background-color: $product_background_color;
+			border-color: $product_link_text_color;
     }
   }
 }
@@ -913,10 +912,9 @@ ul#products {
 }
 
 p[data-hook="use_billing"] {
-  float: right;
   margin-top: -18px;
-  background-color: $layout_background_color;
   padding: 5px;
+	text-align: center;
 }
 
 #coupon_status {
@@ -982,7 +980,7 @@ div[data-hook="inside_cart_form"] {
 }
 
 .cart-subtotal, .cart-total {
-  background: $layout_lowlight_color;
+  background: $layout_background_trans;
 
   td h5 {
     color: #fff;
