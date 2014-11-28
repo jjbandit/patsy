@@ -44,8 +44,8 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 
-gem 'spree', github: 'spree/spree', branch: '2-4-stable'
-gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-4-stable'
-gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-4-stable'
+gem 'spree', github: 'spree/spree', branch: '2-3-stable'
+gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-3-stable'
+gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-3-stable'
 
 gem 'rails_12factor', group: :production
