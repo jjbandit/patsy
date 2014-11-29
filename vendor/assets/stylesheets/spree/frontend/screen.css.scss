@@ -578,7 +578,9 @@ ul#products {
 }
 
 #product-description {
+	background: $layout_background_trans;
   .product-title {
+		text-align: center;
     border-bottom: $default_border;
     margin-bottom: 15px;
     color: $product_title_text_color;
@@ -623,6 +625,8 @@ ul#products {
 }
 
 #cart-form {
+		padding-left: 10px;
+		padding-bottom: 15px;
   #inside-product-cart-form:after {
     content: " ";
     display: block;

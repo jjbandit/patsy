@@ -12,12 +12,8 @@ footer#footer
 	border: none;
 }
 /* Emphasized Stiching */
-#product-images #main-image,
-header#header {
+#product-images #main-image {
 	border-bottom: 2px dashed;
-}
-footer#footer {
-	border-top: 2px dashed;
 }
 
 /* Light Stitching */
@@ -25,9 +21,7 @@ ul#products li a.info,
 #sidebar_products_search .filter-title,
 ul#products li .product-image,
 #product-description .product-title,
-nav#taxonomies .taxonomy-root,
-footer#footer 
-{
+nav#taxonomies .taxonomy-root {
 	border-bottom: 1px dashed $color-complement-0;
 }
 

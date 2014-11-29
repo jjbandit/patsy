@@ -2,24 +2,18 @@
   <div data-hook="product_show" itemscope itemtype="http://schema.org/Product">
     <% @body_id = 'product-details' %>
 
-    <div class="columns six alpha" data-hook="product_left_part">
-      <div class="row" data-hook="product_left_part_wrap">
-
-
-
-
-
-				<% portrait = false	%>
+				<% landscape = false	%>
 	    <% @product.taxons.each do |t| %>
-					<%puts '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1'%>
 				<% if t.name == "Bird" %>
-	    		<% portrait = true %>
-					<%puts '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1'%>
+	    		<% landscape = true %>
 	    	<% end %>
 	    <% end %>
 
 
-	    <% if portrait %>
+	    <% if landscape %>
+
+    <div class="columns ten alpha" data-hook="product_left_part">
+      <div class="row" data-hook="product_left_part_wrap">
 
 			<div id="product-images" data-hook="product_images">
 				<div id="main-image" data-hook>
@@ -32,6 +26,9 @@
 
 	    <% else %>
 
+    <div class="columns eight alpha" data-hook="product_left_part">
+      <div class="row" data-hook="product_left_part_wrap">
+
 			<div id="product-images" data-hook="product_images">
 				<div id="main-image" data-hook>
 					<%= render :partial => 'portrait_image' %>
@@ -42,11 +39,6 @@
 			</div>
 
 	    <% end %>
-
-
-
-
-
 
         <div data-hook="product_properties">
           <%= render :partial => 'properties' %>
@@ -59,7 +51,12 @@
       </div>
     </div>
 
-    <div class="columns ten omega" data-hook="product_right_part">
+		<% if landscape %>
+    <div class="columns six omega" data-hook="product_right_part">
+		<% else %>
+    <div class="columns eight omega" data-hook="product_right_part">
+		<% end %>
+			
       <div class="row" data-hook="product_right_part_wrap">
 
         <div id="product-description" data-hook="product_description">

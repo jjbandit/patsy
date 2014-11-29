@@ -1,6 +1,6 @@
 Spree::Image.class_eval do 
 
 		attachment_definitions[:attachment][:styles] = 
-		{mini: '49x49#', small: '100x100#', portrait: '200x275#', landscape: '300x200#', large: '350x350#'}
+		{mini: '49x49#', small: '150x180#', portrait: '400x550#', landscape: '550x400#', large: '350x350#'}
 
 end
