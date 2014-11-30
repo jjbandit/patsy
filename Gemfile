@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-# Use the required version of rake
-gem 'rake', '~>10.3.2'
+# Better spree paypal express checkout
+gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express', branch: '2-3-stable'
 
 # Use pry for rails c
 gem 'pry-rails'
