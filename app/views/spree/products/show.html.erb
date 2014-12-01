@@ -17,7 +17,7 @@
 				<div id="product-images" data-hook="product_images">
 					<div id="main-image" data-hook>
 					<% if !(@product.total_on_hand > 0) %>
-						<span class="sold-out-band"><%= Spree.t(:out_of_stock) %></span>
+						<span class="sold-out-band landscape"><%= Spree.t(:out_of_stock) %></span>
 					<% end %> 
 					<%= render :partial => 'landscape_image' %>
 					</div>
@@ -34,7 +34,7 @@
 			<div id="product-images" data-hook="product_images">
 				<div id="main-image" data-hook>
 					<% if !(@product.total_on_hand > 0) %>
-						<span class="sold-out-band"><%= Spree.t(:out_of_stock) %></span>
+						<span class="sold-out-band portrait"><%= Spree.t(:out_of_stock) %></span>
 					<% end %> 
 					<%= render :partial => 'portrait_image' %>
 				</div>
