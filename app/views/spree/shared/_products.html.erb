@@ -29,7 +29,9 @@
       <% cache(@taxon.present? ? [I18n.locale, current_currency, @taxon, product] : [I18n.locale, current_currency, product]) do %>
         <div class="product-image">
           <%= link_to small_image(product, :itemprop => "image"), url, :itemprop => 'url' %>
-					this is some text, yay text!
+					<% if product.total_on_hand > 0 %>
+						holy shit there's stock!
+					<% end %>
         </div>
         <%= link_to truncate(product.name, :length => 50), url, :class => 'info', :itemprop => "name", :title => product.name %>
         <span class="price selling" itemprop="price"><%= display_price(product) %></span>
