@@ -1,26 +1,29 @@
+@import 'colorscheme';
 /*--------------------------------------*/
 /* Colors
 /*--------------------------------------*/
 $c_green:       #8dba53 !default;  /* Spree green    */
 $c_red:         #e45353 !default;  /* Error red      */
 
-$layout_background_color:   #BB83BF !default;
-$layout_background_trans:   rgba(0, 0, 0, 0.75) !default;
+$layout_background_color:   $color-primary-0				 !default;
+$layout_background_trans:   rgba(0, 0, 0, 0.75)			 !default;
 $layout_background_trans_light:   rgba(0, 0, 0, 0.5) !default;
-$layout_lowlight_color:     #A15FA5 !default;
+$layout_lowlight_color:     $color-primary-3				 !default;
 
-$title_text_color:          #D9F3A6 !default;
+$title_text_color:          $color-secondary-2-0 !default;
 
-$body_text_color:           #D9F3A6 !default;
-$body_text_highlight:       #D9F3A6 !default;
+$body_text_color:           $color-secondary-2-0 !default;
+$body_text_highlight:       $color-secondary-2-0 !default;
 
-$link_text_color:           #D9F3A6 !default;
-$link_text_highlight:       #D9F3A6!default;
+$link_text_color:           $color-secondary-2-0 !default;
+$link_text_highlight:       $color-secondary-2-0 !default;
 
-$product_background_color:  #BB83BF !default;
-$product_title_text_color:  #D9F3A6 !default;
-$product_body_text_color:   #D9F3A6 !default;
-$product_link_text_color:   #D9F3A6 !default;
+$sold_out_text:							#C52F24 !default;
+
+$product_background_color:  $color-primary-0 !default;
+$product_title_text_color:  $color-secondary-2-0 !default;
+$product_body_text_color:   $color-secondary-2-0 !default;
+$product_link_text_color:   $color-secondary-2-0 !default;
 
 /*--------------------------------------*/
 /* Fonts import from remote

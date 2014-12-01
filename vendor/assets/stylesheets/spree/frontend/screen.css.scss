@@ -4,7 +4,7 @@
 //= depend_on_asset "fontawesome-webfont.svg"
 //= depend_on_asset "spree/frontend/cart.png"
 
-@import 'spree/frontend/variables';
+@import 'variables';
 @import 'font-awesome';
 
 /*--------------------------------------*/
@@ -507,6 +507,17 @@ ul#products {
       padding: 5px;
       min-height: 110px;
 
+			
+			span.out-of-stock {
+				padding: 0;
+				display: block;
+				width: 100%;
+				bottom: 15px;
+				margin-top: -20px;
+				height: 20px;
+				position: relative;
+			}
+
       &:hover {
         border-color: $link_text_color;
       }
@@ -567,17 +578,23 @@ ul#products {
     border: $default_border;
 		position: relative;
 		
+
 		span.sold-out-band {
 
-			text-transform: uppercase;
-			font-size: 30px;
-
-			background: $layout_background_trans_light;
 			width: 100%;
 			position: absolute;
-			margin-top: -100px;
-			top: 50%;
-			line-height: 200px;
+			margin-top: -80px;
+			bottom: 40px;
+			line-height: 80px;
+
+			opacity: 0.8;
+
+			color: $sold_out_text;
+			background: $layout_background_trans_light;
+			text-transform: uppercase;
+			font-size: 50px;
+			font-weight: bold;
+
 		}
 		
 		span.portrait {
@@ -662,11 +679,12 @@ ul#products {
 /* Checkout
 /*--------------------------------------*/
 .out-of-stock {
-  background: #df0000;
-  color: white;
+	color: $sold_out_text;
+	background: $layout_background_trans_light;
+	text-transform: uppercase;
+	font-weight: bold;
   padding: 5px;
   padding-right: 10px;
-  font-weight: bold;
 }
 
 .progress-steps {
