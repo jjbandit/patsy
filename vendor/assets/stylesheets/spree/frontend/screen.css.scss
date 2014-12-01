@@ -565,7 +565,19 @@ ul#products {
   #main-image {
     text-align: center;
     border: $default_border;
+		position: relative;
+		
+		span.sold-out-band {
+			background: $layout_background_trans_light;
+			width: 100%;
+			position: absolute;
+			margin-top: -50px;
+			top: 50%;
+			line-height: 100px;
 
+
+
+		}
     img {
       max-width: 100%; /* Fluid images for product */
     }

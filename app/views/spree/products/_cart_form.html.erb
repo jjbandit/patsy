@@ -42,17 +42,22 @@
 
           <% if @product.master.can_supply? %>
             <link itemprop="availability" href="http://schema.org/InStock" />
-          <% elsif @product.variants.empty? %>
-            <br />
-            <span class="out-of-stock"><%= Spree.t(:out_of_stock) %></span>
+
+					<%# renders the out-of-stock button in the cart_form %>
+          <%# <% elsif @product.variants.empty? %1> %>
+          <%#   <br /> %>
+          <%#   <span class="out-of-stock"><%= Spree.t(:out_of_stock) %1></span> %>
+
           <% end %>
         </div>
 
-        <div class="add-to-cart">
-          <%= button_tag name: 'quantity', value: 1, :class => 'large primary', :id => 'add-to-cart-button', :type => :submit do %>
-            <%= Spree.t(:add_to_cart) %>
-          <% end %>
-        </div>
+				<% if @product.master.can_supply? %>
+					<div class="add-to-cart">
+						<%= button_tag name: 'quantity', value: 1, :class => 'large primary', :id => 'add-to-cart-button', :type => :submit do %>
+							<%= Spree.t(:add_to_cart) %>
+						<% end %>
+					</div>
+				<% end %>
       </div>
     <% else %>
         <div id="product-price">

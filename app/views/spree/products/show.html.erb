@@ -14,23 +14,28 @@
 
     <div class="columns ten alpha" data-hook="product_left_part">
       <div class="row" data-hook="product_left_part_wrap">
-
-			<div id="product-images" data-hook="product_images">
-				<div id="main-image" data-hook>
+				<div id="product-images" data-hook="product_images">
+					<div id="main-image" data-hook>
+					<% if !(@product.total_on_hand > 0) %>
+						<span class="sold-out-band"><%= Spree.t(:out_of_stock) %></span>
+					<% end %> 
 					<%= render :partial => 'landscape_image' %>
-				</div>
-				<div id="thumbnails" data-hook>
+					</div>
+					<div id="thumbnails" data-hook>
 					<%= render :partial => 'landscape_thumbnails' %>
+					</div>
 				</div>
-			</div>
 
 	    <% else %>
 
+
     <div class="columns eight alpha" data-hook="product_left_part">
       <div class="row" data-hook="product_left_part_wrap">
-
 			<div id="product-images" data-hook="product_images">
 				<div id="main-image" data-hook>
+					<% if !(@product.total_on_hand > 0) %>
+						<span class="sold-out-band"><%= Spree.t(:out_of_stock) %></span>
+					<% end %> 
 					<%= render :partial => 'portrait_image' %>
 				</div>
 				<div id="thumbnails" data-hook>
@@ -56,7 +61,8 @@
 		<% else %>
     <div class="columns eight omega" data-hook="product_right_part">
 		<% end %>
-			
+
+
       <div class="row" data-hook="product_right_part_wrap">
 
         <div id="product-description" data-hook="product_description">
@@ -77,6 +83,5 @@
 
       </div>
     </div>
-
   </div>
 <% end %>
