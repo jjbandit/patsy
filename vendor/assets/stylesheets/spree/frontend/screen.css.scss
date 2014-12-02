@@ -620,7 +620,8 @@ ul#products {
   .product-title {
 		text-align: center;
     border-bottom: $default_border;
-    margin-bottom: 15px;
+		padding-top: 10px;
+		margin: 0 10px 15px 10px;
     color: $product_title_text_color;
     font-size: $product_detail_name_font_size;
   }
