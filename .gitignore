@@ -5,6 +5,7 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Foreman stuff
+Procfile
 .env
 
 # Ignore spree source
