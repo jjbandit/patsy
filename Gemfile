@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+ruby '2.1.5'
+
+gem 'aws-sdk'
+
 # Better spree paypal express checkout
 gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express', branch: '2-3-stable'
 
@@ -42,7 +46,6 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
 
 gem 'spree', github: 'spree/spree', branch: '2-3-stable'
 gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-3-stable'
