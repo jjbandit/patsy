@@ -228,6 +228,23 @@ a.button {
 }
 
 /*--------------------------------------*/
+/* Header
+/*--------------------------------------*/
+
+header#header {
+  div.announcement {
+		line-height: 1.75em;
+		font-size: 19px;
+		font-weight: 580;
+    float: left;
+		width: 80%;
+		margin: 0 10%;
+		background: $layout_background_trans;
+		padding: 0 15px;
+  }
+}
+
+/*--------------------------------------*/
 /* Footer
 /*--------------------------------------*/
 footer#footer {
@@ -318,7 +335,7 @@ nav #main-nav-bar {
     &#link-to-cart {
       float: right;
       padding-left: 24px;
-      background: image-url("spree/frontend/cart.png") no-repeat left center;
+      // background: image-url("spree/frontend/cart.png") no-repeat left center;
 
       &:hover {
         border-color: $link_text_color;
