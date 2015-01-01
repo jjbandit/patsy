@@ -17,9 +17,13 @@ body {
   color: $body_text_color;
   line-height: 18px;
   background-color: $layout_background_color;
-	background: image-url("spree/frontend/graham-bg.jpg") no-repeat fixed center;
   -webkit-font-smoothing: antialiased;
+	background-image: image-url("spree/frontend/graham-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
 }
+
 
 /* Line style */
 hr {
