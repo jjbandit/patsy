@@ -1,13 +1,11 @@
 $( document ).ready(function() {
+	
+	$(".container").hide();
+	$(".container").fadeIn(700);
 
-	// Get current background image so we can animate it in
-	// var element = document.getElementById("default"),
-	// 	style = window.getComputedStyle(element),
-	// 	background = style.getPropertyValue("background"); 
-
-	$("#default").hide(0);
-	$("#default").fadeIn(800);
-	$("#products").hide(0);
-	$("#products").fadeIn(800);
+	$("#products").children().each( function (index) {
+		$(this).hide(0);
+		$(this).delay(150*index + 75).fadeIn(700);
+	});
 
 });
