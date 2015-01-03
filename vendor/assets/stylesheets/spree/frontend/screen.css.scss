@@ -650,6 +650,10 @@ ul#products {
     }
   }
   #product-thumbnails {
+		max-width: 400px;
+		margin: 0 auto;
+		text-align: center;
+
     li {
 			width: 32%;
 
@@ -663,6 +667,7 @@ ul#products {
 			-moz-border-radius: 10px;
 
 			img {
+				width: 92%;
 				border-radius: 10px;
 				-webkit-border-radius: 10px;
 				-moz-border-radius: 10px;
@@ -692,11 +697,6 @@ ul#products {
   [data-hook="product-description"] {
     font-size: $product_detail_description_font_size;
     color: $product_body_text_color;
-  }
-}
-
-#product-thumbnails {
-  li {
   }
 }
 
