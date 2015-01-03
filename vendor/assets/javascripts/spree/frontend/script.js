@@ -5,7 +5,7 @@ $( document ).ready(function() {
 
 	$("#products").children().each( function (index) {
 		$(this).hide(0);
-		$(this).delay(100*index + 75).fadeIn(550);
+		$(this).delay(70*index + 75).fadeIn(550);
 	});
 
 });
