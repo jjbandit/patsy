@@ -22,6 +22,10 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
+
+	.container {
+	  margin-top: 150px;
+	}
 }
 
 
@@ -236,6 +240,17 @@ a.button {
 /*--------------------------------------*/
 
 header#header {
+		background-image: image-url("spree/frontend/patsyHeader.png");
+		background-repeat: no-repeat;
+		background-position: top center;
+
+		position: fixed;
+		width: 100%;
+		height: 132px;
+		top: 0;
+		z-index: 1;
+
+
   div.announcement {
 		line-height: 1.75em;
 		font-size: 19px;
@@ -368,9 +383,13 @@ nav #main-nav-bar {
 }
 
 figure#logo {
+		height: 132px;
+		width: 130px;
+
+		margin: 0 auto;
+
   img {
-		max-width: 100px;
-		padding-top: 20px;
+		padding-top: 10px;
   }
 }
 
