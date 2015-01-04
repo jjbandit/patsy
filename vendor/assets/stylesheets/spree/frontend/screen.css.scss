@@ -23,7 +23,7 @@ body {
 	background-position: center;
 	background-attachment: fixed;
 
-	.container {
+	#wrapper	{
 	  margin-top: 150px;
 	}
 }
@@ -314,7 +314,6 @@ table {
 /* Navigation
 /*--------------------------------------*/
 nav#top-nav-bar {
-  text-align: right;
   margin-top: 20px;
 	margin-right: 0;
 
@@ -383,11 +382,6 @@ nav #main-nav-bar {
 }
 
 figure#logo {
-		height: 132px;
-		width: 130px;
-
-		margin: 0 auto;
-
   img {
 		padding-top: 10px;
   }
