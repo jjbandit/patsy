@@ -240,16 +240,14 @@ a.button {
 /*--------------------------------------*/
 
 header#header {
-		background-image: image-url("spree/frontend/patsyHeader.png");
-		background-repeat: no-repeat;
-		background-position: top center;
-
-		position: fixed;
+		margin: 0 auto;
 		width: 100%;
-		height: 132px;
-		top: 0;
-		z-index: 1;
+		height: 200px;
+		max-width: 1200px;
 
+		background: image-url("spree/frontend/patsyHeader.png") no-repeat top center;
+		text-align: center;
+		z-index: 1;
 
   div.announcement {
 		line-height: 1.75em;
@@ -352,7 +350,6 @@ nav #main-nav-bar {
     }
 
     &#link-to-cart {
-      float: right;
       padding-left: 24px;
       // background: image-url("spree/frontend/cart.png") no-repeat left center;
 
@@ -1174,6 +1171,7 @@ table.order-summary {
 /* #Media Queries
 ================================================== */
 
+
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
 
@@ -1200,6 +1198,28 @@ table.order-summary {
     -webkit-text-size-adjust: none;
   }
 
+	#sidebar_products_search {
+		.navigation {
+		  float: left;
+			width: 50%;
+
+			li {
+			  padding-top: 5px;
+			}
+		}
+
+		input.submit {
+		  margin-top: 55px;
+			margin-left: 45px;
+		}
+	}
+
+	header#header {
+		background-size: cover;
+		height: 227px;
+		background-image: image-url("spree/frontend/patsyHeader-mobile.png");
+	}
+
   #order_details .steps-data div.columns,
   #order_summary .steps-data div.columns {
     padding: 0;
@@ -1220,6 +1240,7 @@ table.order-summary {
   }
 
   ul#nav-bar {
+		margin-bottom: 0;
     text-align: center;
   }
 
@@ -1343,6 +1364,12 @@ table.order-summary {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
+
+	header#header{
+		min-width: 300px;
+		border-bottom: 2px solid black;
+		background-image: image-url("spree/frontend/patsyHeader-mobile-small.png");
+	}
 
   .progress-steps li {
     padding: 0;

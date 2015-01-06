@@ -2,9 +2,14 @@
 <div class="container">
 
   <%= render :partial => 'spree/shared/nav_bar' %>
-	<figure id="logo" class="columns three" data-hook><%= logo %></figure>
-  <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
 
+
+	<figure id="logo" class="four columns" data-hook><%= logo %></figure>
+  <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+	
+	<%# <li id="search-bar" class="columns" data-hook> %>
+	<%# 	<%= render :partial => 'spree/shared/search' %1> %>
+	<%# </li> %>
 
 </div>
 
