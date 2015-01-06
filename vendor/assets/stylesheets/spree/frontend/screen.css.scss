@@ -22,10 +22,6 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-
-	#wrapper	{
-	  margin-top: 150px;
-	}
 }
 
 
@@ -1202,6 +1198,11 @@ table.order-summary {
 		.navigation {
 		  float: left;
 			width: 50%;
+			margin-top: 10px;
+
+			.filter-title {
+			  width:200%;
+			}
 
 			li {
 			  padding-top: 5px;
@@ -1209,8 +1210,8 @@ table.order-summary {
 		}
 
 		input.submit {
-		  margin-top: 55px;
-			margin-left: 45px;
+		  margin-top: 87px;
+			margin-left: 60px;
 		}
 	}
 
